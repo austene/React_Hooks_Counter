@@ -5,9 +5,12 @@ export const Counter = () => {
 
   return (
     <div>
-      <p>You have clicked the button {count} times</p>
+      <p>Your total is currently {count}</p>
       <button onClick={() => setCount(count + 1)}>
-        Click Me
+        Add 1
+      </button>
+      <button onClick={() => setCount(count - 1)}>
+        Subtract 1
       </button>
     </div>
   );
